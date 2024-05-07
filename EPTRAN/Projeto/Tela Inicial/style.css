@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    height: 100%;
+}
+
+#menu{
+margin: 15px;
+    float: right;
+    height: 50px;
+    width: 50px;
+}

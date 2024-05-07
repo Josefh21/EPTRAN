@@ -1,0 +1,38 @@
+/* ---------------------- Tela Prefeitura ---------------------- */
+
+.Um {
+    background-color: #000000;
+}
+
+/* ------------------------ Tela EPTRAN ------------------------ */
+
+.Dois {
+    background-color: #003965;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.carregador {
+    margin-left: 40%;
+    margin-right: 40%;
+    border: 6px solid #174f7a;
+    border-top-color: #cecece;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    animation: is-rotating 1s infinite;
+}
+
+@keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+}
+
+.logo{
+    height: 500px;
+}
+
+/* ------------------------------------------------------------- */
