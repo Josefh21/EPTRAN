@@ -2,6 +2,12 @@
 
 .Um {
     background-color: #000000;
+    text-align: center;
+}
+
+.logoPrefeitura{
+    height: 400px;
+    margin-top: 60%;
 }
 
 /* ------------------------ Tela EPTRAN ------------------------ */
@@ -31,7 +37,7 @@
     }
 }
 
-.logo{
+.logoEPTRAN{
     height: 500px;
 }
 

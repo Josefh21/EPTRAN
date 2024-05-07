@@ -4,8 +4,13 @@ body{
 }
 
 header{
-    background-color: black;
-    height: 100%;
+    background-color: #003965;
+    height: 80px;
+}
+
+img{
+    height: 80px;
+    width: 80px;
 }
 
 #menu{
