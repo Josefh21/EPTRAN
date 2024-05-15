@@ -1,16 +1,21 @@
 var menu = document.getElementById("menu");
-var popUp = document.getElementById("miniMenu").classList;
+var popUp = document.getElementById("menuHidden");
 var opac = document.getElementById("opacBlack").classList;
 
-function toggleMenu(){
-    subMenu.classList.toggle("play");
-}
-
 menu.addEventListener('click', function(){
-    popUp.toggle("menuHidden");
-    popUp.toggle("menuShow");
-    opac.toggle("opacBlack");
+    if(popUp.style.display == "none"){
+    popUp.style.display = "block";
+    opac.add("opacBlack");
+    }
+    else{
+        popUp.style.display = "none";
+        opac.remove("opacBlack");
+    }
 })
 
 let subMenu = document.getElementById("subMenu");
+
+function toggleMenu(){
+    subMenu.classList.toggle("open-menu");
+}
 

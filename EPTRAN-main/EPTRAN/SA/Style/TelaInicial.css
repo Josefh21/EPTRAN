@@ -28,11 +28,11 @@ img{
 /* ---------------------- Tela Esmaecida ---------------------- */
 
 @-webkit-keyframes opacBlack {    
-	10% {-webkit-filter: grayscale(5%);
-	-moz-filter: grayscale(5%);
-	-ms-filter: grayscale(5%);
-	-o-filter: grayscale(5%);
-	filter: grayscale(5%);
+	10% {-webkit-filter: grayscale(10%);
+	-moz-filter: grayscale(10%);
+	-ms-filter: grayscale(10%);
+	-o-filter: grayscale(10%);
+	filter: grayscale(10%);
     }
 }
 
@@ -43,15 +43,15 @@ img{
     opacity: 0.5;
     position: fixed;
     z-index: 1;
-    transition: 1s;
+    transition: 500ms;
     animation-name: opacBlack;
 }
 
 /* ---------------------- Lista Suspensa ---------------------- */
 
-.menuHidden{
+#menuHidden{
     margin-left: 60vw;
-    height: 25vh;
+    height: 35vh;
     width: 200px;
     position: absolute;
     float: right;
@@ -61,26 +61,10 @@ img{
     color: white;
     font-family: sans-serif;
     display: none;
+    max-height: 0px;
+    transition: max-height 0.5s;
 }
 
-.menuShow{
-    margin-left: 60vw;
-    height: 25vh;
-    width: 200px;
-    position: absolute;
-    float: right;
-    z-index: 2;
-    background-color: #002b4d;
-    padding-left: 5px;
-    color: white;
-    font-family: sans-serif;
-    display: block;
-    animation-name: appearMenu;
-    animation-duration: 400ms;
-    animation-timing-function: ease-in-out;
+#menuHidden{
+    max-height: 320px;
 }
-
-@keyframes appearMenu {
-    from {top: -35vh;}
-    to {top: 100px;}
-  }
