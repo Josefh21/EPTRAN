@@ -1,0 +1,155 @@
+/* ---------------------- Copiar para menu em cima ---------------------- */
+
+/* ---------------------- Menu 3 itens ---------------------- */
+
+header {
+    background-color: #003965;
+    height: 100px;
+    position: sticky;
+     z-index: 3;
+}
+
+header img .logoEPTRAN {
+    height: 100px;
+    width: 100px;
+}
+
+/* ---------------------- Tela Esmaecida ---------------------- */
+
+@-webkit-keyframes opacBlack {    
+	10% {-webkit-filter: grayscale(5%);
+	-moz-filter: grayscale(5%);
+	-ms-filter: grayscale(5%);
+	-o-filter: grayscale(5%);
+	filter: grayscale(5%);
+    }
+}
+
+@-webkit-keyframes opacHide {    
+	10% {-webkit-filter: grayscale(-5%);
+	-moz-filter: grayscale(-5%);
+	-ms-filter: grayscale(-5%);
+	-o-filter: grayscale(-5%);
+	filter: grayscale(-5%);
+    }
+}
+
+.opacBlack{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 1;
+    transition: 1s;
+    animation-name: opacBlack;
+}
+.opacHide{
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 1;
+    transition: 1s;
+    animation-name: opacHide;
+}
+
+
+
+/* ---------------------- Lista Suspensa ---------------------- */
+
+#menu{
+    margin: 15px;
+    margin-top: 30px;
+    float: right;
+    height: 50px;
+    width: 50px;
+    position: sticky;
+}
+
+.menuHidden{
+    margin-left: 55vw;
+    height: 37vh;
+    width: 200px;
+    position: absolute;
+    float: right;
+    z-index: 2;
+    background-color: #002b4d;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    border-bottom-left-radius: 20px;
+    top: -35vh;
+}
+
+.menuShow{
+    margin-left: 55vw;
+    height: 37vh;
+    width: 200px;
+    position: absolute;
+    float: right;
+    z-index: 2;
+    background-color: #002b4d;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    border-bottom-left-radius: 20px;
+    display: block;
+    animation-name: appearMenu;
+    animation-duration: 400ms;
+    animation-timing-function: ease-in-out;
+
+}
+
+.menuHide{
+    margin-left: 55vw;
+    height: 37vh;
+    width: 200px;
+    position: absolute;
+    float: right;
+    z-index: 2;
+    background-color: #002b4d;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    border-bottom-left-radius: 20px;
+    top: -35vh;
+}
+
+#miniMenu.menuHide {
+    animation: dissapearMenu 400ms ease-in-out;
+}
+
+.menuHidden ul{
+    padding-left: 20px;
+}
+
+.menuShow ul{
+    padding-left: 20px;
+}
+
+.menuHide ul{
+    padding-left: 20px;
+}
+
+.menuHidden p{
+    padding: 10px;
+}
+
+.menuShow p{
+    padding: 10px;
+}
+
+.menuHide p{
+    padding: 10px;
+}
+
+@keyframes appearMenu {
+    from {top: -35vh;}
+    to {top: 100px;}
+}
+
+@keyframes dissapearMenu {
+    from {top: 100px;}
+    to {top: -35vh;}
+}
