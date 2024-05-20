@@ -6,7 +6,7 @@ header {
     background-color: #003965;
     height: 100px;
     position: sticky;
-     z-index: 3;
+    z-index: 3;
 }
 
 header img .logoEPTRAN {
@@ -68,10 +68,10 @@ header img .logoEPTRAN {
 }
 
 .menuHidden{
-    margin-left: 55vw;
-    height: 37vh;
+    height: 340px;
     width: 200px;
     position: absolute;
+    right: 0px;
     float: right;
     z-index: 2;
     background-color: #002b4d;
@@ -79,14 +79,15 @@ header img .logoEPTRAN {
     font-family: sans-serif;
     font-size: 15px;
     border-bottom-left-radius: 20px;
+    overflow-x: hidden;
     top: -35vh;
 }
 
 .menuShow{
-    margin-left: 55vw;
-    height: 37vh;
+    height: 340px;
     width: 200px;
     position: absolute;
+    right: 0px;
     float: right;
     z-index: 2;
     background-color: #002b4d;
@@ -94,18 +95,19 @@ header img .logoEPTRAN {
     font-family: sans-serif;
     font-size: 15px;
     border-bottom-left-radius: 20px;
+    overflow-x: hidden;
     display: block;
     animation-name: appearMenu;
     animation-duration: 400ms;
     animation-timing-function: ease-in-out;
 
-}
+} 
 
 .menuHide{
-    margin-left: 55vw;
-    height: 37vh;
+    height: 350px;
     width: 200px;
     position: absolute;
+    right: 0px;
     float: right;
     z-index: 2;
     background-color: #002b4d;
@@ -113,6 +115,7 @@ header img .logoEPTRAN {
     font-family: sans-serif;
     font-size: 15px;
     border-bottom-left-radius: 20px;
+    overflow-x: hidden;
     top: -35vh;
 }
 

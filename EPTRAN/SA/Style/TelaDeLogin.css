@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    justify-content: center;
 }
 
 header {
@@ -11,26 +11,18 @@ header {
     position: sticky;
      z-index: 3;
 }
-
 img {
     height: 80px;
     width: 80px;
     margin-top: 10px;
 }
-
-form{
-    height: 100vh;
-    width: 100vw;
-}
-
 #log-center{
-    margin-right: 20vw;
-    margin-left: 12vw;
+    margin-left: 25vw;
     margin-top: 25vh;
     margin-bottom: 25vh;
     font-family: 'Mont', sans-serif;
     z-index: -1;
-    width: 70vw;
+    width: 50vw;
     padding: 5px;
 }
 
@@ -40,14 +32,18 @@ form{
    margin-bottom:15px;
    display: flex;
    padding: 5px;
-   width: 100%;
-   margin-right: 10vw;
+   width: 250px;
+}
+
+.input textarea{
+    width: 250px;
 }
 
 #title{
     font-size: larger;
     font-weight: lighter;
     font-family: sans-serif;
+    margin-left: 25%;
 }
 
 #outros{
@@ -85,10 +81,6 @@ padding: 5px;
     outline: none;
 }
 
-.email{
-    height: 100%;
-    width: 100%;
-}
 
 #title{
     margin-left: 25%;

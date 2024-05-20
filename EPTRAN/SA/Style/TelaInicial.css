@@ -1,18 +1,21 @@
 body{
-    margin: 0;
-    padding: 0;
+    min-height: 100vh;
+    max-width: auto;
+    margin: 0 auto;
     background-image: url(../Style/Imagens/Ondas.png);
     background-repeat: no-repeat;
-    background-size: 75%;
+    background-size: 250px;
     background-position-x: right;
     background-position-y: bottom;
+    justify-content: space-around;
 } 
 
 header{
     background-color: #003965;
     height: 100px;
+    width: 100%;
     position: sticky;
-     z-index: 3;
+    z-index: 3;
 }
 
 img{
@@ -21,12 +24,10 @@ img{
     margin-top: 10px;
 }
 
-#menu{
-    margin: 15px;
-    margin-top: 30px;
-    float: right;
-    height: 50px;
-    width: 50px;
-    position: sticky;
+.cinza {
+    background-color: rgb(163, 163, 163);
+    height: 200px;
+    margin: 5vw;
+    width: 90vw;
+    border-radius: 15px;
 }
-
