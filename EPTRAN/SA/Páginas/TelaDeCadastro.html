@@ -16,9 +16,6 @@
         <img src="../Style/Imagens/logoPrefeituraBranca.png">  
         <img src="../Style/Imagens/LogoEptranBranca.png">    
     </header>
-    <!-- <div>
-        <i id="carro" class="fa-solid fa-car" style="color: #ff1644;" style="left: 50px;"></i>
-    </div> -->
     <form>
         <div id="log-center">
             <p id="title">Registre-se</p>
@@ -41,14 +38,33 @@
             <option value="Finais">Series Finais</option>
             <option value="Ensino Médio">Ensino Médio</option>
             </select>
+        </div> 
+        <label for="birth" id="birth-label">Data de nascimento:</label>
+        <div class="multiple" id="birth">
+           
+            <input type="number" placeholder="Dia" id="inputDia" min="1" max="30">
+            
+            <select id="inputMes">
+                <option value="" disabled selected>Mês</option>
+                <option value="1">Janeiro</option>
+                <option value="2">Fevereiro</option>
+                <option value="3">Março</option>
+                <option value="4">Abril</option>
+                <option value="5">Maio</option>
+                <option value="6">Junho</option>
+                <option value="7">Julho</option>
+                <option value="8">Agosto</option>
+                <option value="9">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
+            </select>
+
+            <input type="number" placeholder="Ano" id="inputAno">
         </div>
           <br>
         <div class="submit input">
             <input type="submit" value="Login" id="button-login">
-        </div>
-        <div id="outros">
-            <p>Esqueceu sua senha?</p>
-            <h5>Não tem conta? Registre-se <span style="color: blue;">AQUI</span> </h5>
         </div>
     </div>
     </form>

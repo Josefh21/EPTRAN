@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #003965;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Bem Vindo ---------- */
+
+.bemVindo {
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bemVindo p {
+    font-size: 25px;
+    animation: go-back 1.25s;
+}
+
+/* ---------- Logo EPTRAN ---------- */
+
+.logoEPTRAN {
+    height: 80vw;
+    margin-left: 10vw;
+    margin-right:10vw;
+    animation: go-back 1.5s;
+}
+
+/* ---------- Vamos começar ---------- */
+
+button {
+    width: 60vw;
+    height: 6vh;
+    margin-left: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: #004d88;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    border-radius: 15px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #004275;
+    animation: go-back 2s;
+  }
+  
+  button:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #004275;
+    animation: go-back 2s;
+  }
+  
+/* ---------- Animação ---------- */
+
+@keyframes go-back {
+    from {
+      transform: translateX(350px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }

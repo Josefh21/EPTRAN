@@ -49,16 +49,6 @@ img {
     margin-left: 25%;
 }
 
-#outros{
-    height: 25px;
-}
-
-#outros p{
-    font-size: smaller;
-    margin-left: 25%;
-}
-
-
 :-moz-any
 , h5{
     margin-left: 12.5%;
@@ -105,6 +95,7 @@ input[type=password]::-ms-clear
     padding-left: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
+     
   -webkit-appearance: none;
   -moz-appearance: none;
         background-image:
@@ -124,10 +115,40 @@ input[type=password]::-ms-clear
     
      textarea:focus, select:focus{
         outline: none;
+       
     }
-
 input[type=password]::-ms-reveal,
 input[type=password]::-ms-clear
 {
     display: none;
+}
+
+.multiple input{
+    border: solid 2px lightgray;
+    border-radius: 10px;
+    margin-bottom:15px;
+    display: flex;
+    padding: 10px;
+    width: 15vw;
+    box-sizing: border-box;
+    height: 5vh;
+}
+.multiple select {
+    color:grey;
+    border: solid 2px lightgray;
+    border-radius: 10px;
+    width: 16vw;
+    box-sizing: border-box;
+    height: 5vh;
+    padding: 5px;
+    overflow: scroll;
+    }
+
+.multiple{
+    display: flex;
+    justify-content: space-between;
+}
+#birth-label{
+    margin-top: 25px;
+    font-size: small;
 }
