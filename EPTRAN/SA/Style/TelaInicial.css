@@ -8,6 +8,7 @@ body{
     background-position-x: right;
     background-position-y: bottom;
     justify-content: space-around;
+    font-family: sans-serif;
 } 
 
 header{
@@ -24,11 +25,6 @@ img{
     margin-top: 10px;
 }
 
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-}
-
 .bemVindo {
     margin: 5vw;
 }
@@ -38,11 +34,10 @@ p {
 }
 
 .video {
-    background-color: rgb(197, 197, 197);
-    height: 200px;
-    margin: 5vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 5vh;
     width: 90vw;
     border-radius: 15px;
 }
@@ -73,9 +68,51 @@ p {
     margin-bottom: 5vw;
     width: 40vw;
     border-radius: 15px;
+    position: relative;
 }
 
 #atividades {
     display: grid;
     grid-template-columns: auto auto;
   }
+.blur{
+    filter: blur(5px);
+}
+  .ativ-block{
+    height: 40vw;
+    width: 40vw;
+    border-radius: 15px;
+    z-index: 2;
+    padding: 5vw;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    font-weight: 500;
+    filter: none;
+}
+
+.lock{
+    margin-left: 10vw;
+} 
+
+.ativ-block p{
+    margin-top: 5vh;
+    position: relative;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+body{
+    font-size: x-large;
+}
+ }
+
+ @media screen and (min-width: 1000px) {
+    body{
+        font-size: xx-large;
+    }
+     }
