@@ -1,27 +1,29 @@
 body {
     margin: 0;
     padding: 0;
-    height: 80vh;
-    width: 100vw;
 }
 
-
-header {
+footer {
     background-color: #003965;
-    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+
 }
 
+#footerIMG {
+    height: 14vw;
+} 
 
-img {
-    height: 90px;
-    width: 90px;
-}
 
 #log-center{
     margin-left: 20vw;
     margin-right: 20vw;
     margin-top: 15vh;
-    margin-bottom: 35vh;
     font-family: 'Mont', sans-serif;
     z-index: -1;
     width: 60vw;
