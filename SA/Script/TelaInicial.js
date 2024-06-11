@@ -14,16 +14,18 @@ i++
 
 menu.addEventListener('click', function(){
     popUp.remove("menuHidden");
-    
     popUp.toggle("menuShow");
     opac.toggle("opacBlack");
+    document.body.style.overflow = document.body.style.overflow == "hidden"? "auto": "hidden";
     if(!popUp.contains("menuShow")){
     popUp.add("menuHide");
-    opac.add("opacHide")
+    opac.add("opacHide");
+    document.body.style.overflow = "auto"
     }
     else{
-        popUp.remove ("menuHide");
-        opac.remove("opacHide")
+        popUp.remove("menuHide");
+        opac.remove("opacHide");
+        document.body.style.overflow = "hidden"
     }
 })
 

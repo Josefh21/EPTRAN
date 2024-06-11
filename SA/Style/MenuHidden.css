@@ -6,7 +6,7 @@ header {
     background-color: #003965;
     height: 100px;
     position: sticky;
-    z-index: 3;
+    z-index: 999999;
 }
 
 header img .logoEPTRAN {
@@ -40,18 +40,20 @@ header img .logoEPTRAN {
     width: 100vw;
     opacity: 0.5;
     position: fixed;
-    z-index: 1;
+    z-index: 99;
     transition: 1s;
     animation-name: opacBlack;
+    overflow: hidden;
 }
 .opacHide{
     height: 100vh;
     width: 100vw;
     opacity: 0.5;
     position: fixed;
-    z-index: 1;
+    z-index: 99;
     transition: 1s;
     animation-name: opacHide;
+    overflow: hidden;
 }
 
 
@@ -89,7 +91,7 @@ header img .logoEPTRAN {
     position: absolute;
     right: 0px;
     float: right;
-    z-index: 2;
+    z-index: 999;
     background-color: #002b4d;
     color: white;
     font-family: sans-serif;
