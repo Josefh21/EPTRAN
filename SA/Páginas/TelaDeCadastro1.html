@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EPTRAN</title>
     <link rel="stylesheet" href="../Style/TelaDeCadastro1.css">
+    <script defer src="../Script/TelaDeCadastro1.js"></script>
 </head>
 <body>
     <div class="escrita">
@@ -13,13 +14,16 @@
     </div>
     <div class="nome">
         <div class="input-group">
-            <input required="" type="text" name="text" autocomplete="off" class="input">
-            <label class="user-label">Seu Nome</label>
+            <form required>
+                <input required="" type="text" autocomplete="off" class="input">
+                <label class="user-label">Seu Nome</label>
+                <div id="botao">
+                    <a href="../Páginas/TelaDeCadastro2.html"><button>Próximo</button></a>
+                </div>
+            </form>
         </div>
     </div>
-    <div id="botao">
-        <a href="../Páginas/TelaDeCadastro2.html"><button>Próximo</button></a>
-    </div>
+
     <footer>
         <img id="footerIMG" src="../Style/Imagens/Logos.png">
     </footer>
