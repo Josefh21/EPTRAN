@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPTRAN</title>
+    <link rel="stylesheet" href="../Style/TelaDeCadastro.css">
+    <link rel="website icon" type="png" href="../Style/Imagens/LogoPrefeituraColorida.png">
+    <script src="https://kit.fontawesome.com/bb85e9813e.js" crossorigin="anonymous"></script>
+    <script defer src="../Script/TelaDeLogin.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/mont" rel="stylesheet">
+</head>
+
+<body>
+    <form>
+        <div id="log-center">
+            <p id="title">Registre-se</p>
+        <div class="email input">
+            <i class="fa-solid fa-user" style="color: #9e64a0;"></i>
+            <input type="email" id="email" name="email" placeholder="informe seu email">
+        </div>
+        <br>
+        <div class="senha input">
+            <i class="fa-solid fa-lock" style="color: #9e64a0;"></i>
+            <input type="password" id="senha" name="senha" placeholder="informe sua senha">
+            <i id="eye" class="fa-regular fa-eye" style="color: #acaca9;"></i>
+        </div>
+        <br>
+        <div class="class input">
+            <i class="fa-solid fa-book" style="color: #9e64a0;"></i>
+            <select name="class">
+            <option value="" disabled selected>Selecione Sua Série</option>
+            <option value="Iniciais">Séries Iniciais</option>
+            <option value="Finais">Series Finais</option>
+            <option value="Ensino Médio">Ensino Médio</option>
+            </select>
+        </div> 
+        <label for="birth" id="birth-label">Data de nascimento:</label>
+        <div class="multiple" id="birth">
+           
+            <input type="number" placeholder="Dia" id="inputDia" min="1" max="30">
+            
+            <select id="inputMes">
+                <option value="" disabled selected>Mês</option>
+                <option value="1">Janeiro</option>
+                <option value="2">Fevereiro</option>
+                <option value="3">Março</option>
+                <option value="4">Abril</option>
+                <option value="5">Maio</option>
+                <option value="6">Junho</option>
+                <option value="7">Julho</option>
+                <option value="8">Agosto</option>
+                <option value="9">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
+            </select>
+
+            <input type="number" placeholder="Ano" id="inputAno">
+        </div>
+          <br>
+        <div class="submit input">
+            <input type="submit" value="Login" id="button-login">
+        </div>
+    </div>
+    </form>
+    <footer>
+        <img id="footerIMG" src="../Style/Imagens/Logos.png">
+    </footer>
+</body>
+</html>
