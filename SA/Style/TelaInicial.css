@@ -105,6 +105,14 @@ img{
     position: relative;
     text-align: center;
 }
+.ativ-content{
+    height: 40vw;
+    width: 40vw;
+    border-radius: 15px;
+    padding: 5vw;
+    box-sizing: border-box;
+    position: absolute;
+}
 
 @media screen and (min-width: 700px) {
 body{
@@ -117,3 +125,14 @@ body{
         font-size: x-large;
     }
      }
+
+.ativ-content button{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 1vh;
+    border: 0;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
