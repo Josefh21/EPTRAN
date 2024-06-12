@@ -110,11 +110,16 @@ button {
     color: #003965;
     border-radius: 15px;
     animation: go-back 1.5s;
+    animation: go 1.5s;
   }
   
-  a {
+a {
     text-decoration: none;
-  }
+}
+
+ {
+
+}
     
   /* ------ Animação ------ */
   
@@ -127,4 +132,12 @@ button {
     }
   }
 
+  @keyframes go {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-350px);
+    }
+  }
 /* ------------- */

@@ -1,0 +1,85 @@
+/* ------ Body e Footer ------ */
+
+body {
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #003965;
+}
+
+footer {
+    background-color: #003965;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+}
+
+#footerIMG {
+    height: 14vw;
+} 
+
+/* ------ Escrita ------ */
+
+.escrita {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 28vh;
+    animation: go-back 1s;
+}
+
+.escrita1 {
+    font-size: 20px;
+}
+
+.escrita2 {
+    font-size: 25px;
+}
+
+/* ------ Botão ------ */
+
+#botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+}
+
+button {
+    width: 230px;
+    height: 55px;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #003965;
+    border-radius: 15px;
+    animation: go-back 1.5s;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+    
+
+/* ------ Animação ------ */
+  
+  @keyframes go-back {
+    from {
+      transform: translateX(350px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+/* ------------- */
