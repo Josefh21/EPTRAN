@@ -24,12 +24,41 @@ footer {
     height: 14vw;
 } 
 
+/* ------ Circulos ------ */
+
+#circulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+#branco {
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.azul {
+    height: 15px;
+    width: 15px;
+    background-color: #003965;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+}
+
 /* ------ Escrita ------ */
 
 .escrita {
     text-align: center;
     color: #ffffff;
-    margin-top: 28vh;
+    margin-top: 20vh;
     animation: go-back 1s;
 }
 
@@ -110,17 +139,12 @@ button {
     color: #003965;
     border-radius: 15px;
     animation: go-back 1.5s;
-    animation: go 1.5s;
   }
   
 a {
     text-decoration: none;
 }
 
- {
-
-}
-    
   /* ------ Animação ------ */
   
   @keyframes go-back {
@@ -129,15 +153,6 @@ a {
     }
     to {
       transform: translateX(0);
-    }
-  }
-
-  @keyframes go {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-350px);
     }
   }
 /* ------------- */

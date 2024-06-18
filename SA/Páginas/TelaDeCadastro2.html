@@ -7,37 +7,25 @@
     <link rel="stylesheet" href="../Style/TelaDeCadastro2.css" >
 </head>
 <body>
+    <div id="circulos">
+        <span class="azul"></span>
+        <span id="branco"></span>
+        <span class="azul"></span>
+        <span class="azul"></span>
+    </div>
     <div class="escrita">
         <h3 class="escrita1">Agora me diga,</h3>
         <h3 class="escrita2">Qual sua data de nascimento?</h3>
     </div>
-    </div> 
-        <label for="birth" id="birth-label">Data de nascimento:</label>
-        <div class="multiple" id="birth"></div>
-   
-        <input type="number" placeholder="Dia" id="inputDia" min="1" max="30">
-    
-        <select id="inputMes">
-            <option value="" disabled selected>Mês</option>
-            <option value="1">Janeiro</option>
-            <option value="2">Fevereiro</option>
-            <option value="3">Março</option>
-            <option value="4">Abril</option>
-            <option value="5">Maio</option>
-            <option value="6">Junho</option>
-            <option value="7">Julho</option>
-            <option value="8">Agosto</option>
-            <option value="9">Setembro</option>
-            <option value="10">Outubro</option>
-            <option value="11">Novembro</option>
-            <option value="12">Dezembro</option>
-        </select>
-
-        <input type="number" placeholder="Ano" id="inputAno">
+    <div id="data">
+        <input id="dma" type="date">
     </div>
-    <div class="class input">
-        <select name="class">
-        <option value="" disabled selected>Selecione Sua Série</option>
+    <div class="escrita"> 
+        <h3 class="escrita3">Em qual série você está?</h3>
+    </div>
+    <div id="classInput">
+        <select id="serie" name="class">
+        <option value="" disabled selected>Selecione sua série</option>
         <option value="Iniciais">Séries Iniciais</option>
         <option value="Finais">Series Finais</option>
         <option value="Ensino Médio">Ensino Médio</option>
